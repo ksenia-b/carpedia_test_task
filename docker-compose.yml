@@ -1,0 +1,13 @@
+postgresql:
+  restart: always
+  image: sameersbn/postgresql:12-20200524
+  ports:
+    - "5432:5432"
+  environment:
+    - DEBUG=false
+
+    - DB_USER=admin
+    - DB_PASS=admin
+    - DB_NAME=events
+  volumes:
+    - postgresql:/var/lib/postgresql
