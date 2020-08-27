@@ -8,5 +8,6 @@
        ```  source env/bin/activate ```
    - install requirements.txt
        ``` pip3 install -r requirements.txt ```
+
     - run app
        ```   python3 app.py ```
